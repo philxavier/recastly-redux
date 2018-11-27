@@ -55,6 +55,7 @@ export default class App extends React.Component {
             <VideoList
               handleVideoListEntryTitleClick={this.handleVideoListEntryTitleClick.bind(this)}
               videos={this.state.videos}
+              
             />
           </div>
         </div>
