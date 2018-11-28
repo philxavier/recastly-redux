@@ -20,7 +20,8 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getYouTubeVideos('react tutorials');
+    //this.getYouTubeVideos('react tutorials');
+    handleVideoSearch('React')
   }
 
   handleVideoListEntryTitleClick(video) {
@@ -55,6 +56,7 @@ export default class App extends React.Component {
             <VideoList
               handleVideoListEntryTitleClick={this.handleVideoListEntryTitleClick.bind(this)}
               videos={this.state.videos}
+              
             />
           </div>
         </div>
