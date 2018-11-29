@@ -13,6 +13,6 @@ var mapStateToProps = (state) => {
 }
 
 
-var VideoPlayerContainer = connect(mapStateToProps)(VideoPlayer);
+var VideoPlayerContainer = connect(mapStateToProps, null)(VideoPlayer);
 
 export default VideoPlayerContainer;
