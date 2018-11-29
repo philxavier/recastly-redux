@@ -16,7 +16,7 @@ import reducers from './reducers'; // this exports rootReducer!!!
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
     <App API_KEY={YOUTUBE_API_KEY} searchYouTube={searchYouTube} />
-  </Provider>
+  </Provider>,
   document.getElementById('app')
   
 );
