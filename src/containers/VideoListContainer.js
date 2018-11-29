@@ -6,6 +6,7 @@ import changeVideo from './../actions/currentVideo.js';
 // dispatchers with your VideoList component props.
 
 var mapStateToProps = (state) => {
+    console.log('VLC:',state);
     return {
         videos: state.videoList
     };

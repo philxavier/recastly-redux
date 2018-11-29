@@ -1,5 +1,9 @@
 import Redux from 'redux';
 
+// var initlState = {
+//   video: 
+// }
+
 var currentVideoReducer = (state = null, action) => {
   //TODO: define a reducer for the currentVideo field of our state.
   // console.log('Reducer:', state, action);
@@ -7,7 +11,7 @@ var currentVideoReducer = (state = null, action) => {
     case 'CHANGE_VIDEO':
       var resultObj = {};
       Object.assign(resultObj, state, {video: action.video}); 
-      return resultObj.video;
+      return resultObj.video || null;
     default:
       return state;
   }

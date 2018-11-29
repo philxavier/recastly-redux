@@ -16,6 +16,7 @@ var handleVideoSearch = (q) => {
     searchYouTube(options, (videos) => {
       console.log('data: ', videos)
       dispatch(changeVideoList(videos));
+      dispatch(changeVideo(videos[0]));
     });
   }
 

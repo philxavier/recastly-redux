@@ -10,5 +10,3 @@ var rootReducer = combineReducers({currentVideo: currentVideo, videoList: videoL
 //  listed above.
 
 export default rootReducer;
-
-{}
