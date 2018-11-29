@@ -1,11 +1,6 @@
 import { combineReducers } from 'redux';
 import currentVideo from './currentVideo.js';
 import videoList from './videoList.js';
-//initial state
-const initialState = {
-    video: {},
-    videos: []
-};
 
 var rootReducer = combineReducers({currentVideo: currentVideo, videoList: videoList});
 
