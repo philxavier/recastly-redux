@@ -5,23 +5,24 @@ import handleSearchChange from '../actions/search.js';
 
 
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
     return {
-        handleSearchInputChange: (q = 'test')=> { 
-            console.log(e.target.value);
+        handleSearchInputChange: (q )=> { 
+            console.log("hello");
             dispatch(handleSearchChange(q));
         }
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        value: ''
-    }
-}
+// const mapStateToProps = (state) => {
+//     console.log('state: ',state);
+//     return {
+//         value: state.value
+//     }
+// }
 
 
-const SearchContainer = connect(mapStateToProps, mapDispatchToProps)(Search);
+const SearchContainer = connect(null, mapDispatchToProps)(Search);
 
 //TODO: define a SearchContainer component which will hook up your action
 // dispatchers with your search component props.
