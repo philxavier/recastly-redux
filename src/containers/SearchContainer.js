@@ -8,7 +8,7 @@ import handleSearchChange from '../actions/search.js';
 const mapDispatchToProps = (dispatch) => {
     return {
         handleSearchInputChange: (q )=> { 
-            console.log("hello");
+            //console.log("hello");
             dispatch(handleSearchChange(q));
         }
     }

@@ -13,7 +13,7 @@ import store from '../store/store.js';
 export default class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
+    //console.log(props);
     // this.state = {
     //   videos: [],
     //   currentVideo: null
@@ -24,7 +24,6 @@ export default class App extends React.Component {
     //this.getYouTubeVideos('react tutorials');
     // handleVideoSearch('React')
     store.dispatch(changeVideoList(exampleVideoData));
-    console.log(exampleVideoData);
     store.dispatch(changeVideo(exampleVideoData[0]));
   }
 
